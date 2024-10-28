@@ -48,6 +48,9 @@
 .bg-ab-gy {
   background-color: var(--tx-gray);
 }
+.bg-white{
+  background-color: white;
+}
 body {
   font-family: sans-serif;
 }
@@ -120,7 +123,7 @@ a {
 /* block content */
 
 .container-influ {
-  /* background-color: var(--bg-con); */
+  /* background-color: var(--bg-con-two); */
   padding: 2rem;
 }
 .head-cap {
@@ -141,7 +144,7 @@ a {
 }
 .img-link {
   position: relative;
-  width: 450px;
+  width: 400px;
   height: 380px;
 }
 .img-link > a > img {
@@ -323,9 +326,8 @@ a {
   border-bottom: 1px solid gray;
 }
 /* cotact on navbar */
-.container-influ {
+.container-influ{
   padding: 3rem 1rem;
-  background-color: white;
 }
 .container {
   display: flex;
