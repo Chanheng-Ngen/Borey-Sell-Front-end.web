@@ -53,12 +53,76 @@
 }
 body {
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 li {
   list-style: none;
 }
 a {
   text-decoration: none;
+}
+/* slider */
+.slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.slides {
+  width: 100%;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.slide {
+  min-width: 100%;
+  transition: opacity 1s ease;
+}
+.slide > img {
+  width: 100%;
+  height: auto;
+}
+input[type="radio"] {
+  display: none;
+}
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+#slide4:checked ~ .slides {
+  transform: translateX(-300%);
+}
+.navigation {
+  position: absolute;
+  bottom: 9px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.2rem;
+}
+.navigation label {
+  display: block;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: gray;
+  cursor: pointer;
+}
+/* Add outline to the label when the corresponding radio input is checked */
+input[type="radio"]:checked + label {
+  outline: 2px solid dodgerblue;
+}
+/* Ensure the outline is applied to the label when the radio is checked */
+#slide1:checked ~ .navigation label[for="slide1"],
+#slide2:checked ~ .navigation label[for="slide2"],
+#slide3:checked ~ .navigation label[for="slide3"],
+#slide4:checked ~ .navigation label[for="slide4"] {
+  outline: 2px solid dodgerblue;
+}
+label:hover {
+  outline: 2px solid dodgerblue;
 }
 /* navbar */
 .navbar {
@@ -109,17 +173,6 @@ a {
   color: var(--tx-gold);
   cursor: pointer;
 }
-/* end of navbar */
-/* ads */
-.ads {
-  width: 100%;
-  height: 100%;
-  background-color: var(--bg-con);
-}
-.ads > img {
-  width: 100%;
-}
-/* end of ads */
 /* block content */
 
 .container-influ {
@@ -164,8 +217,8 @@ a {
 .name-home-two {
   position: absolute;
   width: 100%;
-  top: 91%;
-  left: 5%;
+  top: 95%;
+  left: 0.2%;
   color: var(--tx-yellow);
 }
 .detail-home {
@@ -328,7 +381,7 @@ a {
 }
 /* cotact on navbar */
 .container-influ {
-  padding: 3rem 1rem;
+  padding: 0.5rem 1rem;
 }
 .container {
   display: flex;
