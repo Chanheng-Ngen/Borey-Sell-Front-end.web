@@ -48,7 +48,7 @@
 .bg-ab-gy {
   background-color: var(--tx-gray);
 }
-.bg-white{
+.bg-white {
   background-color: white;
 }
 body {
@@ -144,7 +144,7 @@ a {
 }
 .img-link {
   position: relative;
-  max-width: 500px;
+  max-width: 450px;
   height: 380px;
 }
 .img-link > a > img {
@@ -327,7 +327,7 @@ a {
   border-bottom: 1px solid gray;
 }
 /* cotact on navbar */
-.container-influ{
+.container-influ {
   padding: 3rem 1rem;
 }
 .container {
@@ -378,7 +378,6 @@ a {
   margin-top: 1rem;
   text-align: center;
 }
-
 .location {
   color: gray;
   font-size: 0.9rem;
@@ -398,7 +397,7 @@ a {
   padding: 0.7rem 0rem;
 }
 .name {
-  width: 370px;
+  width: 80%;
   height: 45px;
 }
 .name > input {
@@ -412,7 +411,7 @@ a {
   color: gray;
 }
 .descripe {
-  width: 370px;
+  width: 80%;
   height: 250px;
   position: relative;
 }
@@ -489,17 +488,14 @@ iframe {
     flex-direction: row;
     justify-content: center;
   }
-  .name {
-    width: 500px;
-  }
   .container {
     padding: 0 3.5rem;
   }
+  .name {
+    width: 38.5%;
+  }
   .form-name {
     flex-direction: row;
-  }
-  .descripe {
-    width: 1032px;
   }
 }
 @media screen and (min-width: 999px) {
@@ -523,7 +519,7 @@ iframe {
   /* end of navbar */
   /* block content */
   .img-link {
-    width: 470px;
+    min-width: 479px;
     height: 380px;
   }
   .detail-home {
@@ -541,7 +537,7 @@ iframe {
     flex-direction: row;
   }
   .intro-link {
-    width: 450px;
+    width: 470px;
     height: 380px;
   }
   /* end of intro */
