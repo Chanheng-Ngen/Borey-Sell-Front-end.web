@@ -158,10 +158,11 @@ label:hover {
 .nav-link i {
   font-size: 1rem;
   margin-right: 7px;
+  color: var(--tx-gray);
 }
 .nav-link,
 .about-link {
-  color: whitesmoke;
+  color: var(--tx-gray);
   flex-shrink: 0;
 }
 .about-list {
@@ -545,7 +546,7 @@ iframe {
     padding: 0 3.5rem;
   }
   .name {
-    width: 38.5%;
+    width: 39%;
   }
   .form-name {
     flex-direction: row;
