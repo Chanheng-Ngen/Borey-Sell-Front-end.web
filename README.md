@@ -1,2 +1,2 @@
 # Borey-Sell-Front-end
-Just practice my skill using HTML and CSS only and wait for add javaScript continue!
+Just practice own skill after has been from internet like youtube doucument W3School ChatGPT (Explain more) also! using HTML CSS JavaScript !

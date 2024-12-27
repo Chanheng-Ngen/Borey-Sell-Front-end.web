@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <!-- navbar -->
+    <!-- navbar top-->
     <nav class="navbar">
       <div class="nav-left">
         <a href="index.html" class="nav-link">HOME</a>
@@ -33,15 +33,42 @@
           <a href="contact.html" class="about-link">CONTACT</a>
         </div>
         <div class="nav-link"><i class="fa-solid fa-phone"></i>097 222 222</div>
-        <div class="nav-link">
+        <div class="nav-link" id="id-language">
           <i class="fa-solid fa-earth-americas"></i>ENG
+          <i class="fa-solid fa-caret-down"></i>
+          <ul class="language">
+            <li class="language-link">ENG</li>
+            <li class="language-link">ខ្មែរ</li>
+          </ul>
         </div>
-        <div class="toggle">
+        <div class="toggle" id="toggle">
           <div class="nav-link"><i class="fa-solid fa-bars"></i></div>
         </div>
       </div>
     </nav>
-    <!-- end of navbar -->
+    <!-- language -->
+     <!-- navbar left side -->
+     <div class="bg-navbar-left" id="bg-navbar-left">
+      <div class="navbar-left" id="navbar-left">
+        <div class="logo-navbar-left">
+          <a href="index.html">
+            <img
+              src="https://www.boreyangkorpalace.com//home/img/product/61e5213bdcb01_angkor-palace-logo.jpg"
+              alt="Angkor Palace Logo"
+            />
+          </a>
+        </div>
+        <ul class="option">
+          <li class="li-select"><a href="index.html" class="select">Home</a></li>
+          <li class="li-select"><a href="property.html" class="select">Property</a></li>
+          <li class="li-select"><a href="newevent.html" class="select">New/Event</a></li>
+          <li class="li-select"><a href="careers.html" class="select">Careers</a></li>
+          <li class="li-select"><a href="about.html" class="select">About Us</a></li>
+          <li class="li-select"><a href="contact.html" class="select">Contact</a></li>
+        </ul>
+      </div>
+    </div>    
+      <!-- end navbar right side -->
     <!-- slider -->
     <div class="slider bg-con-influ">
       <input type="radio" name="slide" id="slide1" checked />
@@ -258,14 +285,6 @@
               />
             </a>
             <h3 class="name-home-two">TME PREMIER</h3>
-            <!-- <div class="detail-home">
-                  <h3 class="detail">Detail</h3>
-                  <p class="detial-list"><span class="span-num">1</span>Living room</p>
-                  <p class="detial-list"><span class="span-num">2</span>Living room</p>
-                  <p class="detial-list"><span class="span-num">3</span>Living room</p>
-                  <p class="detial-list"><span class="span-num">4</span>Living room</p>
-                  <p class="detial-list"><span class="span-num">5</span>Living room</p>
-                </div> -->
           </li>
           <li class="img-link">
             <a href="#"
@@ -274,14 +293,6 @@
                 alt="home"
             /></a>
             <h3 class="name-home-two">REPOSTE & SPA</h3>
-            <!-- <div class="detail-home">
-                  <h3 class="detail">Detail</h3>
-                  <p class="detial-list"><span class="span-num">1</span>Living room</p>
-                  <p class="detial-list"><span class="span-num">2</span>Living room</p>
-                  <p class="detial-list"><span class="span-num">3</span>Living room</p>
-                  <p class="detial-list"><span class="span-num">4</span>Living room</p>
-                  <p class="detial-list"><span class="span-num">5</span>Living room</p>
-                </div> -->
           </li>
         </ul>
       </div>
@@ -295,14 +306,6 @@
               />
             </a>
             <h3 class="name-home-two">BOREY SR</h3>
-            <!-- <div class="detail-home">
-                  <h3 class="detail">Detail</h3>
-                  <p class="detial-list"><span class="span-num">1</span>Living room</p>
-                  <p class="detial-list"><span class="span-num">2</span>Living room</p>
-                  <p class="detial-list"><span class="span-num">3</span>Living room</p>
-                  <p class="detial-list"><span class="span-num">4</span>Living room</p>
-                  <p class="detial-list"><span class="span-num">5</span>Living room</p>
-                </div> -->
           </li>
           <li class="img-link">
             <a href="#"
@@ -311,14 +314,6 @@
                 alt="home"
             /></a>
             <h3 class="name-home-two">BOREY 60M</h3>
-            <!-- <div class="detail-home">
-                  <h3 class="detail">Detail</h3>
-                  <p class="detial-list"><span class="span-num">1</span>Living room</p>
-                  <p class="detial-list"><span class="span-num">2</span>Living room</p>
-                  <p class="detial-list"><span class="span-num">3</span>Living room</p>
-                  <p class="detial-list"><span class="span-num">4</span>Living room</p>
-                  <p class="detial-list"><span class="span-num">5</span>Living room</p>
-                </div> -->
           </li>
         </ul>
       </div>
@@ -445,5 +440,6 @@
         >Credit: https://www.boreyangkorpalace.com/</a
       >
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
